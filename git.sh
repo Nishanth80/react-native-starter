@@ -26,7 +26,7 @@ if [ -z "$NEEDS_TAG" ]; then
     git tag $NEW_TAG
     echo "Tagged with $NEW_TAG"
     
-    git push --tags Nishanth80:Nishanth@7256@git@github.com:Nishanth80/react-native-starter.git
+    git push --tags nishanth.g@successive.tech:Nishanth@7256@git@github.com:Nishanth80/react-native-starter.git
 else
     echo "Already a tag on this commit"
 fi
