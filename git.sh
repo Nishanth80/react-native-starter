@@ -27,7 +27,7 @@ if [ -z "$NEEDS_TAG" ]; then
     echo "Tagged with $NEW_TAG"
     git add .
     git commit -am "Updated tages"
-    git push --tags
+    git push 
     
     #git push --tags 
 else
