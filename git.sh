@@ -25,8 +25,8 @@ NEEDS_TAG=`git describe --contains $GIT_COMMIT 2>/dev/null`
 if [ -z "$NEEDS_TAG" ]; then
     git tag $NEW_TAG
     echo "Tagged with $NEW_TAG"
-    pwd
-    git push --tags
+    cd /var/lib/jenkins/workspace/Lakeshore-1
+    git push --tags git@github.com:Nishanth80/react-native-starter.git
 else
     echo "Already a tag on this commit"
 fi
