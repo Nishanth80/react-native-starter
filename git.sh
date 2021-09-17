@@ -26,7 +26,7 @@ if [ -z "$NEEDS_TAG" ]; then
     git tag $NEW_TAG
     echo "Tagged with $NEW_TAG"
      
-     git  https://Nishanth80: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@github.com/Nishanth80/react-native-starter.git --push origin tag $NEW_TAG
+     git push https://Nishanth80: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@github.com/Nishanth80/react-native-starter.git origin tag $NEW_TAG
     
     #git push --tags 
 else
