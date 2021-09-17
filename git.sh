@@ -26,7 +26,7 @@ if [ -z "$NEEDS_TAG" ]; then
     git tag $NEW_TAG
     echo "Tagged with $NEW_TAG"
     git fetch --tags
-    #git push origin $NEW_TAG
+    git push origin $NEW_TAG
 else
     echo "Already a tag on this commit"
 fi
