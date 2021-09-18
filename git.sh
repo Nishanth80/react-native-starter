@@ -19,12 +19,12 @@ echo "Updating $VERSION to $NEW_TAG"
 
 get current hash and see if it already has a tag
 $GIT_COMMIT=`git rev-parse HEAD`
-#NEEDS_TAG=`git describe --contains $GIT_COMMIT 2>/dev/null`
+NEEDS_TAG=`git describe --contains $GIT_COMMIT 2>/dev/null`
 
 only tag if no tag already
-#if [ -z "$NEEDS_TAG" ]; then
+if [ -z "$NEEDS_TAG" ]; then
     git tag -a $NEW_TAG -m $NEW_TAG
     echo "Tagged with $NEW_TAG"
-#else
+else
     #echo "Already a tag on this commit"
-#fi
+fi
